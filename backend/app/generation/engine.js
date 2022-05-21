@@ -31,7 +31,7 @@ class GenerationEngine{
                 this.generation.expiration.getTime() - Date.now()
                 );
         })
-        .catch((error) => {
+        .catch(error => {
             console.error(error);
         });
 

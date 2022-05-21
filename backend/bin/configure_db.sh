@@ -21,6 +21,12 @@ echo "Db Created"
 echo "Creating tables"
 psql -h $hostname -p $port -U node_user dragonstackdb < ./bin/sql/generation.sql
 psql -h $hostname -p $port -U node_user dragonstackdb < ./bin/sql/dragon.sql
+psql -h $hostname -p $port -U node_user dragonstackdb < ./bin/sql/trait.sql
+psql -h $hostname -p $port -U node_user dragonstackdb < ./bin/sql/dragonTrait.sql
 echo "Tables created"
+
+echo "Inserting data in Traits table"
+node ./bin/insertTraits.js
+echo "data inserted in Traits table"
 
 echo "Db Configured"
