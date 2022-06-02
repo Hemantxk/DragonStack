@@ -4,21 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean" : "rm -rf dist .cache",
+    "clean": "rm -rf dist .cache",
     "start": "npm run clean && parcel src/index.html",
-    "dev" : "npm run start"
+    "dev": "npm run start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react": "^18.0.10",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^6.26.3",
+    "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "@babel/preset-env": "^1.7.0",
-    "@babel/preset-react": "^6.24.1"
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
   }
 }
